@@ -29,7 +29,6 @@ describe RuCaptcha do
       RuCaptcha.configure do
         self.length = 2
       end
-      #expect(RuCaptcha.generate()).to raise_error('length config error, value must in 3..7')
       expect { RuCaptcha.generate() }.
         to raise_error('length config error, value must in 3..7')
       RuCaptcha.configure do
